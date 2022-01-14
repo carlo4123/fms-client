@@ -58,7 +58,7 @@ const SendModals = ({key,id,casenumber}) => {
 
 
 
-        axios.patch('http://localhost:5000/casenumber/update/'+id,{params} )
+        axios.patch('https://fms-backend-portal.herokuapp.com/casenumber/update/'+id,{params} )
         .then(res => setModalIndex(null))
         .catch(error => {
             console.log("sending",error);

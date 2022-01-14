@@ -17,7 +17,7 @@ const TableTab = ({accountType}) => {
           
             const fetch = async () =>{
                 try {
-                  const res =  await axios.get('http://localhost:5000/casenumber')
+                  const res =  await axios.get('https://fms-backend-portal.herokuapp.com/casenumber')
                     setData(res.data)
 
                     if(data){

@@ -10,7 +10,7 @@ const UserUnitsTable = ({user}) => {
      const  fetchUnit = async () => {
 
         try {
-            const res = await axios.post('http://localhost:5000/account-type/populate',{casenumber: id})
+            const res = await axios.post('https://fms-backend-portal.herokuapp.com/account-type/populate',{casenumber: id})
 
             console.log("result",res)
             setFetchUnits(res.data.units)

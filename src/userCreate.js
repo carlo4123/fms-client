@@ -35,7 +35,7 @@ const UserCreate = () => {
     e.preventDefault()
    
    try {
-     const res = await axios.post('http://localhost:5000/account-type/signup',formValues)
+     const res = await axios.post('https://fms-backend-portal.herokuapp.com/account-type/signup',formValues)
     
     const data = await res.data
     console.log(data.token)

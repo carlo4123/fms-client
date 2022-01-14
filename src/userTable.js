@@ -11,13 +11,13 @@ const UserTable = ({user}) => {
         e.preventDefault()
 
         try {
-         const res =  await  axios.post('http://localhost:5000/casenumber/check-casenumber/',{casenumber:formValue})
+         const res =  await  axios.post('https://fms-backend-portal.herokuapp.com/casenumber/check-casenumber/',{casenumber:formValue})
 
        const data = await res.data._id
        console.log("return id",data)
         
         if(data){
-          const  push = await  axios.post('http://localhost:5000/account-type/push/'+id,{casenumberID:data})
+          const  push = await  axios.post('https://fms-backend-portal.herokuapp.com/account-type/push/'+id,{casenumberID:data})
 
           alert("success")
          }else{

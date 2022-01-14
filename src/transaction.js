@@ -9,7 +9,7 @@ const Transaction = () => {
   
     const [tracking, setTracking] = useState()
     useEffect(()=>{
-        axios.get('http://localhost:5000/casenumber/find/'+casenumber)
+        axios.get('https://fms-backend-portal.herokuapp.com/casenumber/find/'+casenumber)
         .then(res=> setTracking(res.data.tracking))
         .catch(err=> console.log(err))
     },[])

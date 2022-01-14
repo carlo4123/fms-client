@@ -96,7 +96,7 @@ const TablePending = ({pending,accountType}) => {
         console.log("working")
         console.log(params)
         try {
-          const res = await axios.patch('http://localhost:5000/casenumber/update/'+id,{params})
+          const res = await axios.patch('https://fms-backend-portal.herokuapp.com/update/'+id,{params})
           setModalIndex(null)
          
             return res

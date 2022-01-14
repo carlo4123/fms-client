@@ -39,7 +39,7 @@ const Login = ({user, setUser}) => {
 
    try {
     const cookies = new Cookies();
-     const res = await axios.post('http://localhost:5000/account-type/login',formValues)
+     const res = await axios.post('https://fms-backend-portal.herokuapp.com/account-type/login',formValues)
     
     const data = await res.data
    

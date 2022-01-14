@@ -29,7 +29,7 @@ function App() {
 
 useEffect(()=>{
   if(jwt){
-    axios.post('http://localhost:5000/',{jwt})
+    axios.post('https://fms-backend-portal.herokuapp.com/',{jwt})
     .then(res=>{
        setUser(res.data)
     })
