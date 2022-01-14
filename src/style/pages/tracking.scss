@@ -1,0 +1,38 @@
+
+
+.tracking-container{
+    height: 50rem;
+    width: 100%;
+    padding: 7rem 0;
+
+    //layout
+    display: flex;
+    justify-content: center;
+}
+
+
+.tracking-wrapper{
+   padding: 5rem;
+    background-color: $white-1;
+  
+    border: 1rem $blue-3 solid;
+    
+}
+
+.tracking-heading{
+    color: black;
+    font-size: 3.4rem;
+    margin-bottom: 2rem;
+}
+
+.tracking-form{
+    display: flex;
+    flex-direction: column;
+
+    & .button{
+        margin-top: 1.4rem;
+        border-radius: 0;
+        
+    }
+}
+

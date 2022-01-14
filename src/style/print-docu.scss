@@ -1,0 +1,111 @@
+
+.print{
+    font-size: 1.8rem;
+    font-family: 'sanserif';
+  
+    color: black;
+    .bold-text{
+        font-weight: 700;
+    }
+
+    &-header{
+        //layout
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &-row-1{
+        margin-top: rem;
+        display: flex;
+        justify-content: space-between;
+
+        
+    }
+    &-row-2{
+      margin-top: 2rem;
+    //   max-width: 35rem;  
+    }
+
+    &-name{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+
+.decision{
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+.space-1{
+    margin-right: 6rem;
+}
+
+.print-tr{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+   
+
+    justify-items: center;
+
+    td{
+        padding: .5rem 0;
+    }
+}
+
+
+.print-order{
+   margin: 3rem 0 3rem 5rem;
+}
+
+.print-city{
+    margin: 3rem 0 3rem 5rem;
+}
+
+
+.print-atty{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+
+    &--1{
+   
+        grid-column: 1/3;
+        
+    }
+
+    &--1,
+     &--2,
+     &--3{
+         margin: 3rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;  
+    }
+
+}
+
+.print-atty--4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+.last-row{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+.print-attested{
+    margin-bottom: 2rem;
+}
+
+@page {
+   margin: 1.5cm;
+  }

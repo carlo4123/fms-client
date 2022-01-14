@@ -1,0 +1,16 @@
+.footer{
+    background-color: $blue-1;
+    padding: 1.2rem 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .footer-container{
+        width: 100%;
+        max-width: 136rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+}

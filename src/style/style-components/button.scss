@@ -1,0 +1,77 @@
+
+
+.button{
+    font-size: 1.8rem;
+    padding: 1.2rem 1.4rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    &-primary{
+        background-color: $blue-1;
+        color: $white-1;
+
+        &:hover{
+            background-color:#003097;
+        }
+    }
+    &-secondary{
+        background-color: $red-1;
+        color: $white-1;
+
+        &:hover{
+            background-color: rgb(214, 2, 2);
+        }
+    }
+
+    &-tertiary{
+        border: 1px solid $white-1;
+        color: $white-1;
+
+        &:hover{
+            background-color: rgba(rgb(174, 174, 202), 0.6);
+        }
+    }
+
+    // &-edit{
+    //     color: black;
+    //     background: linear-gradient(180deg, #F6F6F4 0, #E0E6EE 100%);
+
+    //     &:hover{
+    //         background: linear-gradient(180deg, #d4d4d4 0, #cbd1d8 100%);
+    //     }
+    // }
+
+    &-edit{
+        color: black;
+        background: #FFCD42;
+
+        &:hover{
+            background: #eebe3c;
+        }
+    }
+
+    &-send{
+        color: $white-1;
+        background-color: #57B157;
+
+        &:hover{
+            background-color: #4b9b4b;
+        }
+    }
+
+    &-upload{
+        text-decoration: underline;
+    }
+}
+
+.button-group{
+
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 1.4rem;
+
+
+}

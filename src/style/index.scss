@@ -1,0 +1,110 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
+
+@import './breakpoints.scss';
+
+@import './variable.scss';
+@import './typhography.scss';
+@import './style-components/button.scss';
+
+
+@import './style-components/input.scss';
+
+@import './style-components/navbar.scss';
+@import './style-components/footer.scss';
+
+@import './style-components/table.scss';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    height: 100%;
+    color: $white-1;
+    font-family: "Poppins", serif;
+}
+
+.main{
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+    background: url(../assets/background.svg);
+    background-size: 100%;
+    background-position: center;
+
+   // background-image: url("../assets/background.svg"), linear-gradient(#eb01a5, #d13531); /* W3C */
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    max-width: 180rem;
+    margin: auto;
+    padding: 0 3.2rem;
+
+    @media only screen and (max-width: $mobile-landscape){
+        padding: 0 1.6rem;
+    }
+ 
+}
+
+.blue-wrapper{
+    // rgba(0,54,175,.75)
+    background-color:rgba(0,54,175,.75);
+    width: 100%;
+    padding:3rem 1.2rem;
+    
+    min-height: 62rem;
+    overflow: hidden
+}
+
+
+.error{
+    color: red;
+}
+
+.successful{
+    background-color: green;
+    padding: 2rem;
+    font-size: 2rem;
+    color: white;
+    width: 100%;
+    
+    //layout
+    display: flex;
+    align-items: center;
+    &-icon{
+        margin-right: 1.5rem;
+        width: 4rem;
+        height: 4rem;
+    }
+   
+}
+
+.hide-print{
+    display: none;
+}
+
+.card{
+    background-color: red;
+}
+@import './print-docu.scss';
+@import './pages/home.scss';
+@import './pages/tracking.scss';
+@import './pages/dashboard.scss';
+@import './pages/login.scss';
+@import './pages/technical-division.scss';
+@import './pages/transaction.scss';
+@import './pages/admin.scss';
+@import './pages/table-tab.scss';
+@import './pages/user-table.scss';

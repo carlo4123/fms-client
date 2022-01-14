@@ -1,0 +1,118 @@
+{
+    "accountType": {
+        "user": "user",
+        "admin": ["TD","ISDM","Legal","OBM", "OC", "OED","Docket"]
+
+    },
+
+
+    "account":{
+        "username": "username",
+        "password": "passoword",
+        "accountType": "accountType",
+        "contactNumber": "09123456789",
+        "firstName": "carlo",
+        "lastName": "cominguez",
+        "trasaction": ["casenumber1", "caseNumber2"]
+        
+        
+    },
+
+
+    "caseNumberDetails":[
+        {
+            "number": "caseNumber",
+            "status": {
+                "tracking": [
+                    {
+                        "where":"TD",
+                        "message": "Technical division forwarder your documents to ISMD"
+                     },
+                     {
+                        "where":"ISMD ",
+                        "message": "ISMD received your documents"
+                     }
+                    ],
+                "location" : {
+                    "where": "TD",
+                    "pending": true,
+                    "received": false
+                }
+                
+            }
+        },
+        {
+            "casenumber": "casenumber1",
+            "companyName": "Victory Liner",
+            "vehicle": "puv",
+            "units":[{
+                "make": "IZUZU TRACTOR HEAD",
+                "motorNumber": "6WA1120144",
+                "plateNumber": "AAA2222",
+                "routeFrom":"dasma",
+                "routeTo":"dasma",
+                "yearModel": "2001"
+            }],
+          
+            "status": {
+                "tracking": [
+                    {
+                        "where":"TD",
+                        "message": "Technical division forwarder your documents to ISMD"
+                     },
+                     {
+                        "where":"ISMD ",
+                        "message": "ISMD received your documents"
+                     }
+                    ],
+                "location" : {
+                    "where": "TD",
+                    "pending": true,
+                    "received": false
+                }
+                
+            }
+
+        },
+        {
+            "number": "caseNumber",
+            "company-name": "Victory Liner",
+            "vehicle": "puv",
+            "units":[{
+                "make": "IZUZU TRACTOR HEAD",
+                "motor-number": "6WA1120144",
+                "plate-number": "AAA2222",
+                "routeFrom":"dasma",
+                "routeTo":"dasma",
+                "year-model": "2001"
+            }],
+           
+            "date-granted": "Nov 21, 2020",
+            "date-expiry": "Nov 21, 2025",
+            "status": {
+                "tracking": [
+                    {
+                        "where":"TD",
+                        "message": "Technical division forwarder your documents to ISMD"
+                     },
+                     {
+                        "where":"ISMD ",
+                        "message": "ISMD received your documents"
+                     }
+                    ],
+                "location" : {
+                    "where": "TD",
+                    "pending": true,
+                    "received": false
+                }
+                
+            }
+
+        }
+       
+       
+
+
+    ]
+ 
+}

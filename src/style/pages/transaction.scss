@@ -1,0 +1,86 @@
+.transaction{
+
+    
+    color: black;
+    display: flex;
+    justify-content: center;
+
+    .heading-2{
+        font-size: 3rem;
+    }
+
+    &-container{
+        background-color: white;
+        padding: 3rem;
+        border: 1rem #6C88BF solid;
+    }
+    &-casenumber{
+        margin: 1.5rem 0 3rem;
+        text-transform: uppercase;
+    }
+    &-items{
+        padding-left: 5rem;
+        display: grid;
+        grid-template-columns: auto auto 1fr;
+        align-items: center;
+        @media only screen and (max-width: $tablet){
+            padding-left: 3rem;
+              
+            }
+
+        @media only screen and (max-width: $mobile-landscape){
+            padding-left: 1.5rem;
+            
+        }
+        @media only screen and (max-width: $mobile-portrait){
+            padding-left: 0;
+            
+        }
+    
+        &:not(:last-child){
+            margin-bottom: 2rem;  
+        }
+        &_date{
+            justify-self: end;
+
+           
+        }
+
+        &_icon{
+            height: 2rem;
+            width: 2rem;
+            position: relative;
+            color: green;
+            margin: 1rem 4rem;
+           
+        }
+
+        &_icon-wrapper{
+           position: relative;
+           &:not(:last-child){
+           &::before{
+               content: '';
+               background-image: linear-gradient(to bottom, #333 40%, rgba(255, 255, 255, 0) 20%);
+               background-position: left;
+               background-size: 4px 7px;
+               background-repeat: repeat-y;
+               position: absolute;
+               height: 3.5rem;
+               width: 1rem;
+               bottom:  -100%;
+               left: 48%;
+               transform: translateY(-50%);
+           }
+        }
+    }
+
+
+
+       
+    }
+}
+
+
+
+
+

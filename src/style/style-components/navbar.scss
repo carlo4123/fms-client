@@ -1,0 +1,128 @@
+
+
+.navbar{
+    position: relative;
+    background-color: $blue-1;
+    width: 100%;
+    padding: 0 3.2rem;
+   
+    @media only screen and (max-width: $mobile-landscape){
+        padding: 0 1.6rem;
+      
+    }
+
+    &-container{
+        width: 100%;
+        max-width: 136rem;
+        margin: auto;
+        padding: 1.2rem 0;
+        //layout
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+       
+    }
+
+    
+
+
+    .brand{
+
+        //layout
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+
+        &-logo{
+            margin-right: 1.4rem;
+        }
+
+        &-name{
+            font-size: 2.4rem;
+            color: $white-1;
+        }
+    }
+
+    &_menu{
+        //layout
+        display: flex;
+
+        @media only screen and (max-width: $tablet){
+            position: absolute;
+            width: 100%;
+            left: 0;
+            bottom: 0;
+            transform: translateY(100%);
+            padding: 1.4rem 3.2rem;
+            background-color: $blue-1;
+
+            //layout
+            display: none;
+            flex-direction: column;
+          
+        }
+
+        
+        @media only screen and (max-width: $mobile-landscape){
+            padding: 1.4rem 1.6rem;
+          
+        }
+
+        &.active{
+            display: flex;
+            z-index: 100000;
+        }
+
+        &-button{
+            display: none;
+            cursor: pointer;
+            width: 3rem;
+            height: 3rem;
+
+            @media only screen and (max-width: $tablet){
+            display: block;
+              
+            }
+    
+
+            &:hover{
+                opacity: 0.7;
+            }
+        }
+    }
+
+    &_link{
+        font-size: 1.8rem;
+        color: $white-1;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none;
+
+        &:hover{
+            opacity: 0.7;
+            cursor: pointer;
+        }
+
+        //layout
+        display: flex;
+        align-items: center;
+
+        &:not(:last-child){
+            margin-right: 2rem;
+            @media only screen and (max-width: $tablet){
+                margin-right: 0;
+                margin-bottom: 1.4rem;
+              
+            }
+        }
+
+        &-icon{
+            width: 2.4rem;
+            height: 2.4rem;
+            margin-right: .8rem;
+        }
+
+       
+    }
+}

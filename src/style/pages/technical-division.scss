@@ -1,0 +1,42 @@
+
+
+.TD-container{
+  
+    width: 100%;
+    padding: 7rem 0;
+
+    //layout
+    display: flex;
+    justify-content: center;
+}
+
+
+.TD-wrapper{
+   padding: 5rem;
+    background-color: $white-1;
+  
+    border: 1rem $blue-3 solid;
+    
+}
+
+.TD-heading{
+    color: black;
+    font-size: 3.4rem;
+    margin-bottom: 2rem;
+}
+
+.TD-form{
+    display: flex;
+    flex-direction: column;
+
+    & .button{
+        margin-top: 1.4rem;
+        border-radius: 0;
+        
+    }
+
+    .input-field-group{
+        margin: 0 0 1.2rem 0 ;
+    }
+}
+

@@ -1,0 +1,42 @@
+
+
+.table-tab{
+    
+    .tabs-wrapper{
+
+        //Layout
+        display: flex;
+        .tabs{
+           
+            padding: 1.2rem 1.8rem;
+            cursor: pointer;
+            font-size: 1.8rem;
+            background-color: #E9E9E9;
+            color: black;
+            &:not(:last-child){
+                margin-right: 1rem;
+               
+            }
+
+            &.active{
+                display: flex;
+              
+                background-color: $white-1;
+                color: black;
+            }
+        }
+    }
+    .tab-content-wrapper{
+
+        
+
+
+        .tabs-content{
+            display: none;
+
+            &.active{
+                display: flex;
+            }
+        }
+    }
+}
