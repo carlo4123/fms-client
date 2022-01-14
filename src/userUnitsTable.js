@@ -23,7 +23,7 @@ const UserUnitsTable = ({user}) => {
 
         fetchUnit()
 
-    },[])
+    },[id])
 console.log("fetch",fetchUnits)
     
     return ( 

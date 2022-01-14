@@ -8,11 +8,12 @@ const Transaction = () => {
     const { casenumber } = useParams();
   
     const [tracking, setTracking] = useState()
+
     useEffect(()=>{
         axios.get('https://fms-backend-portal.herokuapp.com/casenumber/find/'+casenumber)
         .then(res=> setTracking(res.data.tracking))
         .catch(err=> console.log(err))
-    },[])
+    },[casenumber])
 
     console.log("tracking",tracking)
 

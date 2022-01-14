@@ -6,7 +6,7 @@ import UserUnitsTable from "./userUnitsTable"
 const UserTable = ({user}) => {
     const id = user._id
   const [formValue,setFormValue] = useState()
-
+ 
     const handleSubmit = async (e) =>{
         e.preventDefault()
 
@@ -18,7 +18,7 @@ const UserTable = ({user}) => {
         
         if(data){
           const  push = await  axios.post('https://fms-backend-portal.herokuapp.com/account-type/push/'+id,{casenumberID:data})
-
+          console.log(push)
           alert("success")
          }else{
              alert("Casenumber doesn`t exist")
