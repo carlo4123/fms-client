@@ -51,7 +51,7 @@ const DynamicInputs = ({setInputList,inputList}) => {
                             className="input" 
                             value={x.make}
                             onChange={e => handleInputChange(e, i)}
-                            placeholder="company name or operator" />
+                            placeholder="Make" />
                         </div>
 
                         <div className="input-field-group">
@@ -62,7 +62,7 @@ const DynamicInputs = ({setInputList,inputList}) => {
                             className="input" 
                             value={x.motorNumber}
                             onChange={e => handleInputChange(e, i)}
-                            placeholder="company name or operator" />
+                            placeholder="Motor No." />
                         </div>
 
 
@@ -74,7 +74,7 @@ const DynamicInputs = ({setInputList,inputList}) => {
                             className="input" 
                             value={x.plateNumber}
                             onChange={e => handleInputChange(e, i)}
-                            placeholder="company name or operator" />
+                            placeholder="Plate Number" />
                         </div>
 
 
@@ -86,7 +86,7 @@ const DynamicInputs = ({setInputList,inputList}) => {
                             className="input" 
                             value={x.yearModel}
                             onChange={e => handleInputChange(e, i)}
-                            placeholder="company name or operator" />
+                            placeholder="Year Model" />
                         </div>
 
 
@@ -98,7 +98,7 @@ const DynamicInputs = ({setInputList,inputList}) => {
                             className="input" 
                             value={x.routeFrom}
                             onChange={e => handleInputChange(e, i)}
-                            placeholder="company name or operator" />
+                            placeholder="Route From" />
                         </div>
 
 
@@ -111,7 +111,7 @@ const DynamicInputs = ({setInputList,inputList}) => {
                             className="input" 
                             value={x.routeTo}
                             onChange={e => handleInputChange(e, i)}
-                            placeholder="company name or operator" />
+                            placeholder="Route to" />
                         </div>
 
                         
