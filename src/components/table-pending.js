@@ -115,7 +115,7 @@ const TablePending = ({pending,accountType}) => {
     const handleSubmit2 = async (e,id) =>{
      
         try {
-          const res = await axios.patch('http://localhost:5000/casenumber/update/'+id,{params})
+          const res = await axios.patch('https://fms-backend-portal.herokuapp.com/casenumber/update/'+id,{params})
         console.log(res.data)
         return res
         } catch (error) {

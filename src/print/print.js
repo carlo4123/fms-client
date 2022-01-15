@@ -55,8 +55,8 @@ D E C I S I O N
 </div>
 
 <p>   
-       <span className="space-1"></span>     This is an application for Extension of Validity of a Certificate of Public Convenience filed on <span className="bold-text"> August 23, 2017 </span>to operate <span className="bold-text">{data.vehicle}
-           </span>  service within MANILA and from said place to any point in the island of Luzon accessible to motor vehicle traffic and vice-versa, with the use of <span className="bold-text">ONE (1) unit</span>  which is valid up to <span className="bold-text">SEPTEMBER 12, 2017. </span> 
+       <span className="space-1"></span>     This is an application for Extension of Validity of a Certificate of Public Convenience filed on <span className="bold-text"> August 23, 2021 </span>to operate <span className="bold-text">{data.vehicle}
+           </span>  service within MANILA and from said place to any point in the island of Luzon accessible to motor vehicle traffic and vice-versa, with the use of <span className="bold-text">ONE (1) unit</span>  which is valid up to <span className="bold-text">SEPTEMBER 12, 2021. </span> 
                
 </p>
 <br />
@@ -116,7 +116,7 @@ D E C I S I O N
        <br />
        <p>
        <span className="space-1"></span> 
-	The Certificate of Public Convenience issued by virtue of this Decision shall be valid and subsisting only for a period up to SEPTEMBER 12, 2022, shall be subject to further amendment by the Board in accordance with Department Order 2017-11 and the Public Utility Vehicle (PUV) Modernization Program.
+	The Certificate of Public Convenience issued by virtue of this Decision shall be valid and subsisting only for a period up to SEPTEMBER 12, 2026, shall be subject to further amendment by the Board in accordance with Department Order 2017-11 and the Public Utility Vehicle (PUV) Modernization Program.
     </p>
 <br />
     <p>
