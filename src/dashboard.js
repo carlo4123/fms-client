@@ -7,7 +7,7 @@ const Dashboard = ({user}) => {
         <div className="dashboard">
             <img src={logo} alt="" className="dashboard-logo" />
             <h1 className="heading-1">
-                WELCOME, {user.firstName}
+                WELCOME,  <span> {user.firstName}</span> 
             </h1>
             
 

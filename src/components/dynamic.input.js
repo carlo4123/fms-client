@@ -114,13 +114,14 @@ const DynamicInputs = ({setInputList,inputList}) => {
                             placeholder="company name or operator" />
                         </div>
 
-
+                        
 
                         {inputList.length !== 1 && <button
                         className="removeBtn"
                     onClick={() => handleRemoveClick(i)}><MdClose className="removeBtn-icon"/></button>}
-
+              
                     </div>
+                    <br />
                     {inputList.length - 1 === i && <button className="button button-send" onClick={handleAddClick}>Add Units</button>}
                         </div>
                     );

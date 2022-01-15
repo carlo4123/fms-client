@@ -93,12 +93,13 @@ const TablePending = ({pending,accountType}) => {
    const params = [set,tracking]
    
     const handleSubmit = async (e,id,casenumber) =>{
-        console.log("working")
+        e.preventDefault()
+       
         console.log(params)
         try {
-          const res = await axios.patch('https://fms-backend-portal.herokuapp.com/update/'+id,{params})
+          const res = await axios.patch('https://fms-backend-portal.herokuapp.com/casenumber/update/'+id,{params})
           setModalIndex(null)
-         
+          console.log("working")
             return res
         } catch (error) {
             console.log(error)
@@ -108,7 +109,7 @@ const TablePending = ({pending,accountType}) => {
             alert("received document")
         }
         console.log("received")
-        e.preventDefault()
+      
     }
 
     const handleSubmit2 = async (e,id) =>{
@@ -189,6 +190,7 @@ const TablePending = ({pending,accountType}) => {
                              <DynamicInputs setInputList={setInputList} inputList={inputList}/>
                        
                            
+                           <br />
 
                             <div className="modal_form-footer">
                             <button type="submit" value="insert data" className="button button-primary">insert data</button>

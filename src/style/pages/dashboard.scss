@@ -8,13 +8,22 @@
 
     .heading-1{
         font-weight: bold;
-       
+        text-align: center;
+        
+        span{
+            text-transform: capitalize;
+        }
+        @media only screen and (max-width: $mobile-portrait){
+            font-size: 5rem;
+        }
     }
     
     &-logo{
         width: 15rem;
         height: 15rem;
         margin-bottom: 2rem;
+        border-radius: 100%;
+        border: 1px solid $white-1;
     }
 
     &-sub-heading{

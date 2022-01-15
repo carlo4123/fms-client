@@ -85,7 +85,7 @@ const SendModals = ({key,id,casenumber}) => {
                     <option value="admin_docket">Docket</option>
                    
                 </select>
-
+               
                 <button type="submit" className="button button-primary">send</button>
             </form>
         </div>

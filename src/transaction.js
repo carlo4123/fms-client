@@ -26,7 +26,7 @@ const Transaction = () => {
             <h2 className="heading-2">
                 Franchise Tracking 
             </h2>
-            <h3 className="transaction-casenumber">casenumber: { tracking ? casenumber : casenumber} </h3>
+            <h3 className="transaction-casenumber">casenumber: <span> { tracking && casenumber }</span> </h3>
             <div className="transaction-box">
             {!tracking ? <h1>Casenumber Doesn`t exists</h1> : tracking.map((each,key) => {
                 return(
