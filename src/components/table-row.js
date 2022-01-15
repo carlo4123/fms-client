@@ -28,14 +28,11 @@ console.log()
             <td className="table-data">from {unit.routeFrom} to {unit.routeTo}</td>
             <td className="table-data">{unit.yearModel}</td>
            
-            <td className="table-data"> {data.tracking.length === 14 && "2022" }
+            <td className="table-data"> {data.tracking.length === 6 &&  accountType === "admin_ismd" && "2022" }
         
             </td>
-            <td className="table-data"> {
-                  data.tracking.length === 14 && "2022"
-               }
-        </td>
-            {accountType === "admin_legal" || (accountType === "admin_ismd" && data.tracking.length === 10 ) &&
+            <td className="table-data"> {data.tracking.length === 6 &&  accountType === "admin_ismd" && "2027" } </td>
+            {accountType === "admin_legal" || (accountType === "admin_ismd" && data.tracking.length === 6 ) &&
             <td className="table-data">
                <PrintDocu data={data} />
             </td>
