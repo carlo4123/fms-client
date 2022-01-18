@@ -83,11 +83,11 @@ const TableTab = ({accountType}) => {
                     <div className={tabs===2 ? "tabs active" : "tabs"}  onClick={() => handlingTab(2)}>
                         Pending
                     </div>
-
+                    {accountType === "admin_ismd" &&
                     <div className={tabs===3 ? "tabs active" : "tabs"}  onClick={() => handlingTab(3)}>
                         For Releasing
                     </div>
-
+                    }
                     <div className={tabs===4? "tabs active" : "tabs"}  onClick={() => handlingTab(4)}>
                         Done
                     </div>
@@ -103,7 +103,7 @@ const TableTab = ({accountType}) => {
                     <TablePending  pending={pending} accountType={accountType}/>
                     </div>
 
-
+                 
                     <div className={tabs===3 ? "tabs-content active" : "tabs-content"}>
                     <TableApprove toApprove={toApprove} />
                     </div>
