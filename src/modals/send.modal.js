@@ -2,8 +2,10 @@ import axios from 'axios';
 import { useState } from 'react';
 import { MdClose } from 'react-icons/md';
 
-const SendModals = ({key,id,casenumber}) => {
+const SendModals = ({key,id,casenumber,accountType}) => {
     
+
+    console.log("asdfas",accountType)
     const [modalIndex,setModalIndex] = useState(null)
     const toggleItem = index => {
         setModalIndex(index)
@@ -46,12 +48,33 @@ const SendModals = ({key,id,casenumber}) => {
             message: message
         }
     }
-   const set ={
-        location:{
-            division: formValue,
-            received: false
+
+   
+    
+    let set 
+    
+    if(accountType === "admin_docket"){
+        set = {
+            location:{
+                division: formValue,
+                received: true
+            },
+            readyToRelease: false,
+            readyToApproved: true
         }
-   }
+    }else{
+
+        set = {
+            location:{
+                division: formValue,
+                received: false
+            }
+       }
+    }
+
+    // console.log(set)
+
+  
    const params = [set,tracking]
 
     const handleSubmit = (e,id) =>{

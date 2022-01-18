@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { Link } from 'react-router-dom';
 
 const UserUnitsTable = ({user}) => {
     const id = user._id
@@ -65,8 +66,13 @@ console.log("fetch",fetchUnits)
                         <td className="table-data">{each.vehicle}</td>
                         <td className="table-data">{`from ${each.routeFrom} to ${each.routeTo}`}</td>
                         <td className="table-data">{sub.yearModel}</td>
-                        <td className="table-data"></td>
-                        <td className="table-data"></td>
+                        <td className="table-data">{each.dateGranted}</td>
+                        <td className="table-data">{each.dateExpiry}</td>
+                        <td className="table-data">
+                            <Link to={`/tracking/${each.casenumber}`}>
+                                view
+                            </Link>
+                        </td>
                         </tr>
                        )
                         

@@ -4,8 +4,11 @@ import UserUnitsTable from "./userUnitsTable"
 
 
 const UserTable = ({user}) => {
+
+
     const id = user._id
   const [formValue,setFormValue] = useState()
+  const [formErrors, setFormErrors] = useState()
  
     const handleSubmit = async (e) =>{
         e.preventDefault()
@@ -13,20 +16,32 @@ const UserTable = ({user}) => {
         try {
          const res =  await  axios.post('https://fms-backend-portal.herokuapp.com/casenumber/check-casenumber/',{casenumber:formValue})
 
-       const data = await res.data._id
-       console.log("return id",data)
+           
+       const data = await res.data.id
+      
         
         if(data){
           const  push = await  axios.post('https://fms-backend-portal.herokuapp.com/account-type/push/'+id,{casenumberID:data})
-          console.log(push)
-          alert("success")
-         }else{
-             alert("Casenumber doesn`t exist")
+
+
+          console.log("push",push)
          }
            
         } catch (error) {
-            console.log(error)
-             alert("Casenumber doesn`t exist")
+            const errors =error.response.data
+      
+           console.log(errors)
+            if(errors){  
+                if(errors.errors.casenumber){
+                    setFormErrors(errors.errors.casenumber)
+                }
+
+                if(errors.errors.units){
+                    setFormErrors(errors.errors.units)
+                }
+               
+            }
+            
         }
 
        
@@ -34,6 +49,7 @@ const UserTable = ({user}) => {
 
     const handleChange=(e)=>{
         setFormValue(e.target.value)
+        setFormErrors(null)
     }
 
 
@@ -47,6 +63,7 @@ const UserTable = ({user}) => {
 
             <button className="button button-send" type="submit">add</button>
             </form>
+            <p className="error">{formErrors}</p>
         <UserUnitsTable user={user} />
 
         </div>

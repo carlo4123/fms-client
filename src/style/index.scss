@@ -98,7 +98,8 @@ body{
 .card{
     background-color: red;
 }
-@import './print-docu.scss';
+@import './print/print-docu.scss';
+@import './print/print-release.scss';
 @import './pages/home.scss';
 @import './pages/tracking.scss';
 @import './pages/dashboard.scss';

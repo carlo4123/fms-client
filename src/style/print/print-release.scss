@@ -1,0 +1,46 @@
+
+.print-list{
+    
+    //layout
+
+
+    &-item{
+        width: 100%;
+
+        //layout
+        display: flex;
+       justify-content: space-between;
+
+
+        &_left{
+            display: grid;
+            grid-template-columns: 11rem auto auto;
+            
+            span{
+                margin: 0 5px;
+            }
+        }
+    }
+    
+}
+
+.units-header{
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.verified-row{
+    
+    //layout
+    display: flex;
+    justify-content: space-around;
+    p span{
+        font-size: 2rem;
+        letter-spacing: 1rem;
+    }
+}
+
+.fuse{
+    text-decoration: underline;
+}
